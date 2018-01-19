@@ -9,6 +9,10 @@
 .menu
 {
 	background: #252525;
+	position: fixed;
+	width: 100%;
+	z-index:100;
+
 }
 
 .menu a
@@ -54,22 +58,30 @@
 
 .intro
 {
-	padding: 150px 0px;
+	bottom: -78px;
 	text-align: center;
 	color: white;
-	background: url("../img/bg-intro.jpg")no-repeat center center;
+	/*background: url("../img/bg-intro.jpg")no-repeat center center;*/
 	background-size:cover;
+	padding-bottom:  50px;
+
 
 }
+.intro > .active {
+	text-align: center;
+}
 
-.intro h1
-{
+.intro h1{
 	text-transform: uppercase;
 	font-size: 3em;
-}
+	z-index:99;
+	top:0px;
+	position: absolute;
+	text-align: center;
 
-.intro h1::after
-{
+	margin: 150px 250px;
+}
+.intro h1::after{
 	content:"";
 	display: block;
 	width: 20px;
@@ -78,17 +90,22 @@
 	margin: 10px auto;
 	transition: 1s;
 }
-
-.intro h1:hover::after
-{
+.intro h1:hover::after{
 	width: 300px;
 	transition: 1s;
 }
-
-.intro p
-{
+.intro p{
 	font-size: 1.125em;
 	font-style: italic;
+	z-index:99;
+	top:0px;
+	position: absolute;
+  margin: 300px 365px;
+
+}
+.intro img{
+	height: 450px;
+	width: 100%;
 }
 
 /* sobre a Brafé*/
@@ -423,4 +440,24 @@ margin-bottom: 30px;
 .footer-container img
 {
 	float: right;
+}
+
+
+
+
+.slide {
+	position: relative;
+	overflow: hidden;
+}
+
+.slide > * {
+	width: 100%;
+	position: absolute;
+	opacity: 0;
+	transition: .5s;
+}
+
+.slide > .active {
+	position: relative;
+	opacity: 1;
 }
