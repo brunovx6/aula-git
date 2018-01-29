@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+}
+header img{
+  float: left;
+	height: 100px;
+	margin-left: 100px;
+
+}
+
+
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #132A57; /* Azul */
+	padding: 15px 0;
+	z-index: 10;
+}
+
+.header_menu {
+	text-align: right;
+  float: right;
+  margin-top: 40px;
+  margin-right: 100px;
+}
+
+.header_menu ul li {
+	display: inline-block;
+	margin-left: 25px;
+
+}
+
+.header_menu ul li a {
+	color: #ededed;
+	font-weight: bold;
+	text-transform: uppercase;
+  text-decoration: none;
+	letter-spacing: .1em;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 10px 0;
+}
+
+.header_menu ul li a:hover {
+	color: black;
+}
+
+.header_menu ul li a.menu_ativo {
+	color: #FFF;
+}
+
+body{
+  background-color: #ededed;
+  font-family: sans-serif;
+}
+#cadastre{
+  margin-top: 200px;
+}
+#box{
+  height: 650px;
+  width: 600px;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 10px;
+  border-radius: 10%;
+  border-color: #132A57;
+  margin: 60px auto;
+}
+
+#box h2{
+  padding-top: 40px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+#box p{
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+#box input{
+  width: 260px;
+  margin: 0 auto 20px auto;
+  display: block;
+  border: 1px solid #000;
+  height: 35px;
+  padding: 0 15px;
+}
+
+#box .certo {
+  border-color: green;
+}
+
+#box .erro{
+  border-color: red;
+}
+#radiocpf{
+  margin-bottom: 100px;
+  float:left;
+}
+#radiocnpj{
+  margin-top: 100px;
+  margin-left: 300px;
+  float:left;
+}
+#cadastre{
+  text-align: center;
+  margin-bottom:  20px;
+}
+#btn {
+  color: #132A57;
+	border: 3px solid #132A57;
+	padding: 10px 30px;
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .1em;
+  text-decoration: none;
+  text-decoration-color: white;
+
+}
